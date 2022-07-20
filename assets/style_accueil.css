@@ -1,0 +1,112 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #08babe ;
+}
+
+/* SECTION 1 */
+.haut {
+    background-color: grey;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 25px;
+}
+
+.search {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.d-flex {
+    width: auto;
+}
+
+/* SECTION 2 */
+.categorie {
+	max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 350px;
+
+	/* L'association des 3 propriétés suivantes permet de centrer horizontalement ET verticalement les éléments enfants (div.flex-item) du bloc (section.categorie) mis en display:flex; */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-item {
+    width: 200px;
+    height: 250px;
+    border: 1px solid;
+    text-align: center;
+}
+
+#one {
+    background-image: url("../img/zen.jpeg");
+    color: #de80c4;
+    height: 200px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#two {
+    background-image: url("../img/energy.jpeg");
+    color: #ff3e38;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#three {
+    background-image: url("../img/dance.jpeg");
+    color: #5826f4;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#four {
+    background-image: url("../img/oxygene.jpeg");
+    color: #72cc7b;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #08babe;
+}
+
+/* MEDIA-QUERIES */
+@media (max-width: 992px){
+    .search {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        height: 120px;
+    }
+    .categorie {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
